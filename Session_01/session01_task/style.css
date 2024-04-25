@@ -6,6 +6,9 @@
 
 body {
   font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body,
@@ -34,5 +37,32 @@ nav {
     align-items: center;
     column-gap: 1.75rem;
     padding-block: 0.5rem;
+
+    & li:not(:has(a)) {
+      color: gray;
+    }
   }
+}
+
+main,
+figure {
+  display: grid;
+  place-items: center;
+}
+
+main ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: hsl(0, 0%, 20%);
+  padding: 1rem;
+  color: white;
+  display: grid;
+  place-items: center;
+  margin-top: auto;
 }
