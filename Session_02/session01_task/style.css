@@ -1,0 +1,6 @@
+body {
+  min-height: 100vh;
+  font: 1em sans-serif;
+  display: grid;
+  place-content: center;
+}
